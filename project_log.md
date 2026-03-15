@@ -4,12 +4,12 @@
 ---
 
 **The Problem Statement**
-In e-commerce, businesses typically only recognize lost customers after they have already left — making retention efforts too late to be effective. This project investigates whether early behavioral signals, specifically inactivity patterns and engagement levels, can identify at-risk users before they fully churn — enabling timely intervention while the customer is still recoverable.
+In e-commerce, businesses typically only recognize lost customers after they have already left, making retention efforts too late to be effective. This project investigates whether early behavioral signals, specifically inactivity patterns and engagement levels, can identify at-risk users before they fully churn, enabling timely intervention while the customer is still recoverable.
 
 ---
 
 **The Central Question**
-Can user inactivity and behavioral patterns predict churn risk early enough to enable meaningful intervention — and does behavioral segmentation reveal which users are most valuable to protect?
+Can user inactivity and behavioral patterns predict churn risk early enough to enable meaningful intervention and does behavioral segmentation reveal which users are most valuable to protect?
 
 ---
 
@@ -18,7 +18,7 @@ Can user inactivity and behavioral patterns predict churn risk early enough to e
 2. Are at-risk users financially distinguishable from active users through spend and purchase behavior?
 3. Which behavioral segments represent the highest revenue risk if lost?
 4. Do low-activity users who purchase consistently represent a hidden high-value customer group?
-5. What is the intervention window — how many days exist between early warning and confirmed churn?
+5. What is the intervention window - how many days exist between early warning and confirmed churn?
 6. How does purchase frequency distribute across churn categories?
 
 ---
@@ -37,7 +37,7 @@ Can user inactivity and behavioral patterns predict churn risk early enough to e
 | EventType | Action taken (page_view, purchase, etc.) |
 | ProductID | Product involved (where applicable) |
 | Amount | Purchase value (purchase events only) |
-| Outcome | Redundant with EventType — dropped during cleaning |
+| Outcome | Redundant with EventType - dropped during cleaning |
 
 - **Size:** 74,817 rows, 1,000 users
 - **Time Period:** January 1, 2024 – July 24, 2024
@@ -65,7 +65,7 @@ Can user inactivity and behavioral patterns predict churn risk early enough to e
 | Churn threshold | 30 days | 15 days | Max inactivity in dataset was only 19 days |
 | Potential churn threshold | 25 days | 7 days | Same reason — adjusted to fit actual data |
 | Activity level split | Not defined | Median total events (75) | Splits users evenly, resistant to outliers |
-| Quiet Loyal definition | 1-2 purchases | Purchase frequency >= median | More defensible — normalizes for duration |
+| Quiet Loyal definition | 1-2 purchases | Purchase frequency >= median | More defensible - normalizes for duration |
 | Dataset end date | Hardcoded July 24 | Max last_activity timestamp | Eliminated negative inactivity values |
 
 ---
