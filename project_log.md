@@ -128,5 +128,6 @@ Ecommerce_Churn_Analysis/
 ├── reports/
 │   └── screenshots/
 ├── README.md
+├── project_log.md
 └── requirements.txt
 ```
